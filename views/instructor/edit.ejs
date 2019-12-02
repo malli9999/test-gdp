@@ -1,0 +1,42 @@
+<br/>
+<br/>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <h2>Edit Course </h2>
+      <div class="content">
+          <div class="row">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-6  ">
+        
+        <form method="POST" action="/instructor/save/<%= instructors._id %>">
+          
+         
+            <!-- COMMON TO EDIT AND CREATE -->
+            <%include partial_edit.ejs %>
+           
+            <!-- <a href="/instructor/openfile?file_name=<%= instructors.fileUrl %>"> DOWNLOAD FILE -->
+            <br><a href="/instructor/viewstudents/<%= instructors._id %>"> VIEW STUDENTS
+      <!-- <button class="btn btn-primary btn-sm float-left"
+      id="right" style="color :rgb(20, 90, 220)" o="instructor/viewstudents/<%= instructors._id %>; return false;"> View Students </button>  -->
+      </a> 
+
+      <!-- <input type="text" class="form-control" id="codewordsetname" name="codewordsetname" value="<%= instructors.codewordsetname %>" required> -->
+   
+    
+              <input type="submit" value="Save" class="btn btn-primary" />
+              <input type="button" onclick="window.location.href='/instructor'" value="Cancel" class="btn btn-danger"   />
+        </form>
+        <br/>
+        
+        <!-- <form method="get" action="/instructor">
+          <input type="submit" value="Return to list" class="btn btn-caution" />
+        </form> -->
+      </div>
+     
+        </div>
+      </div>
+    </div>
+  </div>
+
+

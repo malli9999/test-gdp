@@ -1,0 +1,150 @@
+<p>Click <a href="#" id="myBtn2">here</a> for student roster file format.</p>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <!-- <h1>HI</h1> -->
+    <h3>Student Roaster File.</h3>
+    <p>Here are the instructions on how to uplaod a file for student roaster.</p>
+    <p>1. The File format must be a .Xlxs(Excel sheet)</p>
+    <p>2. The contents of the file will be auto delimited as it is an excel sheet.</p>
+    <p>3. The contents must be entered in a new line.</p>
+    <p>4. Here is an example of the contents of the file.</p>
+
+    <p>--------------------------------File-------------------------------------</p>
+    <table>
+      <tr>
+        <th>name</th>
+        <th>emailid</th>
+      </tr>
+      <tr>
+        <td>Mallikarjuna Bodepudi</td>
+        <td>malli@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Swathi Challagundla</td>
+        <td>swathi@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Sneha Madhavaram</td>
+        <td>sneha@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Vamshi Krishna Nuka</td>
+        <td>nuka@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Sai Manikanta Durga Prasad Vinukonda</td>
+        <td>sai@gmail.com</td>
+      </tr>
+      
+    </table>
+    
+  </div>
+
+</div>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: auto;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    height: auto;
+  }
+
+  /* The Close Button */
+  .close {
+    color: rgb(0, 0, 0);
+    /* float: right !important; */
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: rgb(0, 0, 0, 1);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+</style>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn22 = document.getElementById("myBtn2");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal 
+  btn22.onclick = function (event) {
+    modal.style.display = "block";
+    event.preventDefault();
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
