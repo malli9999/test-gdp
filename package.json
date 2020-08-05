@@ -24,7 +24,7 @@
     "errorhandler": "latest",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
-    "express-fileupload": "^1.1.6-alpha.6",
+    "express-fileupload": "^1.1.9",
     "express-flash": "^0.0.2",
     "express-session": "^1.16.2",
     "express-status-monitor": "^1.2.7",
