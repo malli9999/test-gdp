@@ -22,7 +22,7 @@
     "dotenv": "latest",
     "ejs": "latest",
     "errorhandler": "latest",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-ejs-layouts": "^2.5.0",
     "express-fileupload": "^1.1.6-alpha.6",
     "express-flash": "^0.0.2",
